@@ -21,20 +21,11 @@ body {
   margin: 0;
 }
 
-.draggable {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  text-align: center;
-  padding: 0 20px 0 20px;
-  flex: 1;
-}
-
 .draggable-list {
   list-style: none;
   border: 1px solid var(--border-color);
   padding: 0;
+  box-shadow: 3px 3px #e8e8e8;
 }
 
 .draggable-list li:not(:last-of-type) {
@@ -55,7 +46,7 @@ body {
 }
 
 .draggable-list .number {
-  background-color: var(--background-color);
+  background-color: #a3d8f4;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -72,6 +63,31 @@ body {
   margin-right: 20px;
 }
 
+.draggable {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 0 20px 0 20px;
+  flex: 1;
+}
+
 .check-btn {
-  margin: auto;
+  background-color: #e8e8e8;
+  border: none;
+  color: var(--text-color);
+  font-size: 16px;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 2px 2px #888888;
+}
+
+.check-btn:active {
+  transform: scale(0.98);
+}
+
+.check-btn:focus {
+  outline: none;
 }
